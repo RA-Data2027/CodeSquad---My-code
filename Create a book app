@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Tells the browser this document uses modern HTML. -->
+
+<html lang="en">
+<!-- Starts the HTML document. lang="en" says its language is English. -->
+
+<head>
+<!-- Starts the section that holds information about the page. -->
+
+  <meta charset="UTF-8" />
+  <!-- Sets the character encoding so text and symbols display properly. -->
+
+  <title>XYZ Bookstore Page</title>
+  <!-- Sets the title shown in the browser tab. -->
+
+</head>
+<!-- Ends the head section. -->
+
+<body>
+<!-- Starts the content displayed on the page. -->
+
+  <h1>XYZ Bookstore</h1>
+  <!-- Adds the page's main heading. -->
+
+  <p>Browse our collection of amazing books!</p>
+  <!-- Adds an introductory paragraph. -->
+
+  <div class="card-container">
+  <!-- Starts a container that groups the book cards. -->
+
+    <div class="card" id="sally-adventure-book">
+    <!-- Starts Sally's book card. "card" is a reusable class;
+         the id uniquely identifies this card. -->
+
+      <h2>Sally's SciFi Adventure</h2>
+      <!-- Adds the heading for Sally's book. -->
+
+      <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+      <!-- Adds Sally's book description. -->
+
+      <button class="btn">Buy Now</button>
+      <!-- Adds a button labeled "Buy Now". -->
+
+    </div>
+    <!-- Ends Sally's book card. -->
+
+    <div class="card" id="dave-cooking-book">
+    <!-- Starts Dave's book card, with its own unique id. -->
+
+      <h2>Dave's Cooking Adventure</h2>
+      <!-- Adds the heading for Dave's book. -->
+
+      <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe at a time.</p>
+      <!-- Adds Dave's book description. -->
+
+      <button class="btn">Buy Now</button>
+      <!-- Adds Dave's "Buy Now" button. -->
+
+    </div>
+    <!-- Ends Dave's book card. -->
+
+  </div>
+  <!-- Ends the container holding both book cards. -->
+
+  <p>Review your selections and continue to checkout.</p>
+  <!-- Adds instructions below the book cards. -->
+
+  <div class="btn-container">
+  <!-- Starts a container for the navigation buttons. -->
+
+    <button id="view-cart-btn" class="btn">View Cart</button>
+    <!-- Adds the View Cart button with a unique id. -->
+
+    <button id="checkout-btn" class="btn">Checkout</button>
+    <!-- Adds the Checkout button with a unique id. -->
+
+  </div>
+  <!-- Ends the navigation-button container. -->
+
+</body>
+<!-- Ends the visible page content. -->
+
+</html>
+<!-- Ends the HTML document. -->
