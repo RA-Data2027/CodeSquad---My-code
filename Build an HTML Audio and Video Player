@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML document. -->
+
+<html lang="en">
+<!-- Starts the page. lang="en" says the page is written in English. -->
+
+<head>
+  <!-- The head holds page information and styles, not the visible players. -->
+
+  <meta charset="UTF-8">
+  <!-- Helps the browser display text characters correctly. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Helps the page size itself appropriately on mobile screens. -->
+
+  <title>Code and Chill</title>
+  <!-- The title shown in the browser tab. -->
+
+  <style>
+    /* CSS starts here. It changes appearance, not the page's content. */
+
+    body {
+      /* Applies these styles to the visible page as a whole. */
+
+      font-family: Arial, sans-serif;
+      /* Uses Arial for text, or another sans-serif font if needed. */
+
+      background-color: #f3f0ff;
+      /* Sets the page background to a pale purple. */
+
+      color: #25203b;
+      /* Sets the default text color to dark purple. */
+
+      max-width: 760px;
+      /* Keeps the page content from growing wider than 760px. */
+
+      margin: 40px auto;
+      /*
+        Adds 40px of space above and below the body.
+        "auto" shares the left and right space, centering the body
+        when there is enough room.
+      */
+
+      padding: 0 20px;
+      /* Adds 0px of inner space vertically and 20px horizontally. */
+    }
+
+    h1 {
+      /* Applies to the main page heading. */
+
+      text-align: center;
+      /* Centers the heading text. */
+    }
+
+    section {
+      /* Applies to BOTH section elements below. */
+
+      background-color: white;
+      /* Gives each section a white background. */
+
+      padding: 24px;
+      /* Creates space between each section's content and its edges. */
+
+      margin: 24px 0;
+      /* Adds 24px of space above and below each section. */
+
+      border-radius: 12px;
+      /* Rounds the corners of each section. */
+    }
+
+    video {
+      /* Applies to the video player. */
+
+      max-width: 100%;
+      /*
+        Prevents the video from exceeding its available container width.
+        This helps it fit on smaller screens while width="640"
+        supplies the width required by the lab.
+      */
+    }
+  </style>
+  <!-- CSS ends here. -->
+</head>
+
+<body>
+  <!-- Everything visible on the page goes inside body. -->
+
+  <h1>Code and Chill</h1>
+  <!-- The page's main title. The lab requires an h1. -->
+
+  <section>
+    <!-- First section: the video and its title. -->
+
+    <h2>Watch: How the JavaScript Map Method Works</h2>
+    <!-- Title of the video. The lab requires an h2 in this section. -->
+
+    <video controls width="640">
+      <!--
+        video creates a video player.
+        controls displays browser-provided play/pause and other controls.
+        width="640" sets the player width required by the lab.
+      -->
+
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+        type="video/mp4"
+      >
+      <!--
+        source identifies the video file.
+        src is the file's address.
+        type="video/mp4" tells the browser the file format.
+        You could add more source elements for other formats.
+      -->
+
+      Your browser does not support the video element.
+      <!-- Fallback text for browsers that do not support the video element. -->
+    </video>
+  </section>
+
+  <section>
+    <!-- Second section: the audio and its title. -->
+
+    <h2>Listen: Sailing Away</h2>
+    <!-- Title of the song. The lab requires an h2 in this section. -->
+
+    <audio
+      controls
+      loop
+      src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+    >
+      <!--
+        audio creates an audio player.
+        controls displays browser-provided playback controls.
+        loop starts the audio again when it finishes.
+        src points to the audio file.
+      -->
+
+      Your browser does not support the audio element.
+      <!-- Fallback text if the browser does not support the audio element. -->
+    </audio>
+  </section>
+</body>
+</html>
