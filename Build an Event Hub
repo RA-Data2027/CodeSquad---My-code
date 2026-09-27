@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML document. -->
+
+<html lang="en">
+<!-- Starts the page. lang="en" identifies its language as English. -->
+
+<head>
+  <!-- Contains information about the page. -->
+
+  <meta charset="UTF-8">
+  <!-- Helps the browser display text characters correctly. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Helps the page fit different screen sizes. -->
+
+  <title>Event Hub</title>
+  <!-- Text shown in the browser tab. -->
+</head>
+
+<body>
+  <!--
+    The header must be the FIRST element inside body for this lab.
+    It introduces the page and contains its navigation.
+  -->
+  <header>
+    <h1>Event Hub</h1>
+    <!-- The required main heading. Keep this exact text for the lab. -->
+
+    <nav>
+      <!-- nav groups links used to move around the page. -->
+
+      <ul>
+        <!-- ul creates an unordered, or bulleted, list. -->
+
+        <li>
+          <!-- li is one list item. -->
+          <a href="#upcoming-events">Upcoming Events</a>
+          <!--
+            a creates a link.
+            href="#upcoming-events" jumps to the element whose
+            id is "upcoming-events" below.
+          -->
+        </li>
+
+        <li>
+          <a href="#past-events">Past Events</a>
+          <!--
+            This link jumps to the element whose id is "past-events".
+            The href and id values must match.
+          -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- main contains the primary content of the page. -->
+
+    <section id="upcoming-events">
+      <!--
+        section groups related content.
+        Its id lets the first navigation link jump here.
+        Keep this as the FIRST section inside main.
+      -->
+
+      <h2>Upcoming Events</h2>
+      <!-- Heading for this section. -->
+
+      <article>
+        <!-- One self-contained event entry. -->
+
+        <h3>Build Your First Website</h3>
+        <!-- Title of the first upcoming event. -->
+
+        <p>
+          Practice creating a web page with HTML headings, links, and images.
+        </p>
+        <!-- Description of the first upcoming event. -->
+      </article>
+
+      <article>
+        <!-- Second upcoming event entry. -->
+
+        <h3>Creative Coding Night</h3>
+
+        <p>
+          Bring a project idea and spend an evening experimenting with code.
+        </p>
+      </article>
+    </section>
+
+    <section id="past-events">
+      <!--
+        The SECOND section inside main.
+        Its id matches href="#past-events" in the navigation.
+      -->
+
+      <h2>Past Events</h2>
+      <!-- Heading for the past-events section. -->
+
+      <article>
+        <!-- First past event. -->
+
+        <h3>HTML Basics Workshop</h3>
+
+        <p>
+          Participants built a simple page and learned how HTML elements
+          give content structure.
+        </p>
+
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg"
+          alt="Photo from a past event"
+          width="400"
+        >
+        <!--
+          img displays an image.
+          src points to the image file.
+          alt provides text describing the image.
+          width sets its displayed width to 400 pixels.
+          For your own image, replace src and write alt text that
+          accurately describes what that image shows.
+        -->
+      </article>
+
+      <article>
+        <!-- Second past event. -->
+
+        <h3>Community Project Showcase</h3>
+
+        <p>
+          Local creators shared the websites and coding projects they had
+          been working on.
+        </p>
+
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+          alt="Photo from another past event"
+          width="400"
+        >
+        <!-- Each past-event article has its own image and alt text. -->
+      </article>
+    </section>
+  </main>
+</body>
+</html>
