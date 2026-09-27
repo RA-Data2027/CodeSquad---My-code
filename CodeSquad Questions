@@ -188,4 +188,8 @@ HTML quiz
 | 129 | Which attribute is used to mark an input read only? | readonly                                                       | A read-only text input cannot be edited, but it can still receive focus and its value can be submitted. developer.mozilla | <input type="text" value="Event Hub" readonly>   |
 | 130 | When does the focus state occur?                    | When the user clicks an input or selects it using the Tab key. | Focus shows which field is ready for interaction. 1057                                                                    | Click or Tab to <input type="text"> to focus it. |
 
-
+| #   | Question                                               | Answer                        | When or why it matters                                                                   | Example                                                |
+| --- | ------------------------------------------------------ | ----------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| 131 | Which elements are contained within a <tr> element?    | <td> and <th>                 | <tr> defines a table row. Use <td> for data cells and <th> for header cells. 1081        | <tr><th>Name</th><td>Alex</td></tr>                    |
+| 132 | What are the main sections of an HTML table?           | <thead>, <tbody>, and <tfoot> | They group header, body, and footer rows. You do not need all three in every table. 1078 | <thead>...</thead><tbody>...</tbody><tfoot>...</tfoot> |
+| 133 | What is the main recommended use of HTML tables today? | Displaying tabular data.      | Use tables for information organized in rows and columns, not for page layout. 1079      | A table of hotel room types and prices.                |
