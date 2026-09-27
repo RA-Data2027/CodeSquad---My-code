@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML document. -->
+
+<html lang="en">
+<!-- Starts the page and identifies its language as English. -->
+
+<head>
+  <!-- Contains information about the page. -->
+
+  <meta charset="UTF-8">
+  <!-- Helps the browser display text correctly. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Helps the page fit different screen sizes. -->
+
+  <title>My Book Catalog</title>
+  <!-- Text shown in the browser tab. -->
+
+  <style>
+    /* These styles are optional; they give the project its own look. */
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f3eb;
+      color: #29241e;
+      padding: 24px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      background-color: white;
+    }
+
+    caption {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    th,
+    td {
+      border: 1px solid #8a7967;
+      padding: 12px;
+      text-align: left;
+    }
+
+    thead,
+    tfoot {
+      background-color: #eadcc7;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <!-- table holds information arranged in rows and columns. -->
+
+    <caption>Stories for Curious Readers</caption>
+    <!-- Optional title describing the table. -->
+
+    <thead>
+      <!-- The table's header section. -->
+
+      <tr>
+        <!-- tr creates one row. This is the ONE row in the table head. -->
+
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Publication Year</th>
+        <!--
+          th creates a header cell.
+          The four headings must appear in this exact order for the lab.
+          scope="col" identifies each heading as a column heading.
+        -->
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- The table body contains the book entries. -->
+
+      <tr>
+        <!-- First book row. -->
+        <td>The Lantern Garden</td>
+        <td>Mira Vale</td>
+        <td>Fantasy</td>
+        <td>2018</td>
+      </tr>
+
+      <tr>
+        <!-- Second book row. -->
+        <td>Signals from Tomorrow</td>
+        <td>Jonah Reed</td>
+        <td>Science Fiction</td>
+        <td>2021</td>
+      </tr>
+
+      <tr>
+        <!-- Third book row. -->
+        <td>The Hidden Staircase</td>
+        <td>Elena Brooks</td>
+        <td>Mystery</td>
+        <td>2016</td>
+      </tr>
+
+      <tr>
+        <!-- Fourth book row. -->
+        <td>Across the Blue Valley</td>
+        <td>Amara Finch</td>
+        <td>Adventure</td>
+        <td>2020</td>
+      </tr>
+
+      <tr>
+        <!-- Fifth book row. -->
+        <td>Small Moments, Big Ideas</td>
+        <td>Leo Hart</td>
+        <td>Nonfiction</td>
+        <td>2023</td>
+      </tr>
+
+      <!--
+        Each book has its own tr.
+        Each book row contains exactly four td data cells:
+        Title, Author, Genre, and Publication Year.
+        These are sample book entries; replace them with your own if you like.
+      -->
+    </tbody>
+
+    <tfoot>
+      <!-- The table's footer section. -->
+
+      <tr>
+        <!-- The ONE footer row. -->
+
+        <td colspan="4">Total Books: 5</td>
+        <!--
+          td is the footer's data cell.
+          colspan="4" makes this ONE cell span all four columns.
+          The number 5 matches the five book rows in tbody.
+          If you add or remove books, update this number.
+        -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
