@@ -1,0 +1,214 @@
+Yes. Here is the **corrected survey form with comments inside the code**. You can save it as a template; the `<!-- comments -->` explain how to rebuild each part and will not appear on the page.
+
+```html
+<!DOCTYPE html>
+<!-- Tells the browser this is an HTML document. -->
+
+<html lang="en">
+<!-- Starts the page. lang="en" identifies the language as English. -->
+
+<head>
+  <!-- Holds information about the page. -->
+
+  <meta charset="UTF-8">
+  <!-- Helps the browser display text characters correctly. -->
+
+  <title>Survey Form</title>
+  <!-- Text shown in the browser tab. -->
+</head>
+
+<body>
+  <!-- Visible content begins here. -->
+
+  <h1 id="title">Coding Survey</h1>
+  <!--
+    h1 is the main page heading.
+    The lab requires this heading to have id="title".
+  -->
+
+  <p id="description">What did you enjoy about this course?</p>
+  <!--
+    p creates a paragraph.
+    The lab requires a nonempty paragraph with id="description".
+    Do not put another <p> inside this one.
+  -->
+
+  <form id="survey-form">
+    <!--
+      The form contains every field the user fills in.
+      The lab requires id="survey-form".
+      Keep all inputs, labels, the dropdown, the textarea,
+      and the submit button between this tag and </form>.
+    -->
+
+    <label id="name-label" for="name">Name</label>
+    <!--
+      id="name-label" is required by the lab.
+      for="name" connects this label to the input with id="name".
+    -->
+
+    <input
+      id="name"
+      name="name"
+      type="text"
+      placeholder="Enter your full name"
+      required
+    >
+    <!--
+      id="name" identifies this input on the page.
+      name="name" identifies its value when form data is submitted.
+      type="text" accepts ordinary text.
+      placeholder displays a hint while the field is empty.
+      required means the user must fill it in.
+    -->
+
+    <label id="email-label" for="email">Email</label>
+    <!--
+      id="email-label" is required by the lab.
+      for="email" matches the email input's id.
+    -->
+
+    <input
+      id="email"
+      name="email"
+      type="email"
+      placeholder="Email"
+      required
+    >
+    <!--
+      type="email" tells the browser to check email formatting.
+      required means this field cannot be left empty.
+    -->
+
+    <label id="number-label" for="number">
+      Hours you can study per week
+    </label>
+    <!--
+      id="number-label" is required by the lab.
+      for="number" matches the number input's id.
+    -->
+
+    <input
+      id="number"
+      name="study-hours"
+      type="number"
+      min="1"
+      max="40"
+      placeholder="Enter a number from 1-40"
+    >
+    <!--
+      type="number" creates a numeric field.
+      min="1" and max="40" set its allowed range.
+      This field is optional because it does not have required.
+    -->
+
+    <label for="dropdown">What is the most interesting topic?</label>
+    <!-- Connects the question to the select element below. -->
+
+    <select id="dropdown" name="favorite-topic">
+      <!--
+        select creates a dropdown menu.
+        The lab requires id="dropdown".
+      -->
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javascript">JavaScript</option>
+      <!--
+        Text between the option tags is shown to the user.
+        Each value identifies the selected option when submitted.
+        The lab requires at least two selectable options.
+      -->
+    </select>
+
+    <fieldset>
+      <!-- Groups controls that answer the same question. -->
+
+      <legend>How would you prefer to attend classes?</legend>
+      <!-- The title of this group of radio buttons. -->
+
+      <input
+        id="online"
+        type="radio"
+        name="attendance"
+        value="online"
+      >
+      <label for="online">Online</label>
+      <!-- for="online" matches id="online". -->
+
+      <input
+        id="in-person"
+        type="radio"
+        name="attendance"
+        value="in-person"
+      >
+      <label for="in-person">In person</label>
+      <!--
+        Both radio buttons share name="attendance".
+        That makes them one group, so the user can choose one answer.
+        Each radio button has its own id and value.
+      -->
+    </fieldset>
+
+    <fieldset>
+      <!-- Groups the checkboxes for one multiple-choice question. -->
+
+      <legend>
+        Which activities would you enjoy the most? Select all that apply.
+      </legend>
+
+      <input
+        id="practice"
+        type="checkbox"
+        name="activities"
+        value="practice"
+      >
+      <label for="practice">Hands-on Practice</label>
+
+      <input
+        id="projects"
+        type="checkbox"
+        name="activities"
+        value="projects"
+      >
+      <label for="projects">Building Projects</label>
+
+      <input
+        id="discussions"
+        type="checkbox"
+        name="activities"
+        value="discussions"
+      >
+      <label for="discussions">Group Discussions</label>
+      <!--
+        Checkboxes allow several answers to be selected.
+        Every checkbox has a value, as the lab requires.
+        Each id is unique and matches its label's for attribute.
+        Do not reuse id="projects" for the discussions checkbox.
+      -->
+    </fieldset>
+
+    <label for="comments">Additional Feedback</label>
+    <!-- for="comments" matches the textarea's id. -->
+
+    <textarea
+      id="comments"
+      name="comments"
+      placeholder="Please share"
+    ></textarea>
+    <!--
+      textarea creates a multi-line comments field.
+      The lab specifically requires a textarea inside the form.
+      Open it with <textarea> and close it with </textarea>;
+      do not use <input> for this requirement.
+    -->
+
+    <button id="submit" type="submit">Submit</button>
+    <!--
+      id="submit" is required by the lab.
+      type="submit" makes this button submit the form.
+    -->
+  </form>
+  <!-- The form ends here. Everything the lab asks for is above this line. -->
+</body>
+</html>
+```
